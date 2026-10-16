@@ -15,14 +15,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+            - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # 👈 Gunakan versi Node yang sesuai dengan project Anda
-          cache: 'npm' # Ganti ke 'yarn' atau 'pnpm' jika Anda menggunakannya
+          node-version: 20
 
       - name: Install Dependencies
-        run: npm ci # Menggunakan 'npm ci' lebih cepat dan aman untuk CI/CD
+        run: npm install
 
       - name: Build Project
         run: npm run build
