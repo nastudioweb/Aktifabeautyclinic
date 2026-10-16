@@ -30,7 +30,10 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm install
+        # Menambahkan flag legacy-peer-deps dan pembersihan cache untuk membypass bug 'edgesOut'
+        run: |
+          npm cache clean --force
+          npm install --legacy-peer-deps
 
       - name: Build Project
         run: npm run build
