@@ -1,0 +1,83 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="100" fill="url(#pinkGrad)" />
+  <defs>
+    <linearGradient id="pinkGrad" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#E982B0" />
+      <stop offset="1" stopColor="#D45D8E" />
+    </linearGradient>
+  </defs>
+  <g fill="#FFFFFF" stroke="#FFFFFF">
+    <path
+      d="M102 38 C 114 42, 128 70, 140 102 C 146 118, 152 135, 155 142 C 152 143, 140 143, 134 142 C 128 128, 121 110, 115 95 C 105 73, 98 56, 102 38 Z"
+      fill="#FFFFFF"
+      strokeWidth="0.5"
+    />
+    <path
+      d="M78 40 
+         C 86 38, 97 38, 104 40
+         C 101 49, 97 60, 93 70
+         C 88 70, 83 71, 79 73
+         C 74 76, 70 80, 71 85
+         C 73 88, 76 90, 81 92
+         C 82 95, 78 98, 76 100
+         C 78 102, 82 102, 85 104
+         C 80 108, 77 114, 80 120
+         C 83 124, 88 126, 92 127
+         C 84 133, 75 137, 65 142
+         C 58 142, 51 142, 47 141
+         C 55 133, 64 122, 69 110
+         C 74 97, 76 83, 73 70
+         C 71 61, 73 48, 78 40 Z"
+      fill="#FFFFFF"
+    />
+    <path
+      d="M90 88 
+         C 105 84, 120 74, 126 62
+         C 130 54, 132 46, 129 44
+         C 126 42, 120 48, 118 55
+         C 116 62, 108 72, 94 77 Z"
+      fill="#FFFFFF"
+    />
+    <circle cx="128" cy="46" r="4.5" fill="#FFFFFF" stroke="none" />
+    <path
+      d="M136 54 C 142 50, 146 54, 143 60 C 139 64, 134 60, 136 54 Z"
+      fill="#FFFFFF"
+      stroke="none"
+    />
+    <path
+      d="M118 48 C 114 43, 116 38, 121 40 C 124 43, 123 48, 118 48 Z"
+      fill="#FFFFFF"
+      stroke="none"
+    />
+    <circle cx="140" cy="62" r="3" fill="#FFFFFF" stroke="none" />
+    <path
+      d="M80 94 C 88 93, 102 93, 117 93 C 119 96, 115 97, 104 97 C 92 97, 83 96, 80 94 Z"
+      fill="#FFFFFF"
+      stroke="none"
+    />
+  </g>
+  <text
+    x="100"
+    y="160"
+    textAnchor="middle"
+    fill="#FFFFFF"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="18"
+    font-weight="700"
+    letter-spacing="3"
+  >
+    AKTIFA
+  </text>
+  <text
+    x="100"
+    y="178"
+    textAnchor="middle"
+    fill="#FFFFFF"
+    font-family="'Plus Jakarta Sans', sans-serif"
+    font-size="10"
+    font-weight="600"
+    letter-spacing="5"
+  >
+    BEAUTY
+  </text>
+</svg>

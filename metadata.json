@@ -1,0 +1,6 @@
+{
+  "name": "Aktifa Beauty Clinic - Klinik Kecantikan Bekasi",
+  "description": "Website resmi Aktifa Beauty Clinic Bekasi dengan reservasi online WhatsApp, katalog harga treatment lengkap, dan galeri kecantikan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
