@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # 👈 Ganti dengan 'master' jika branch utama Anda bernama master
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # 👈 Gunakan versi Node yang sesuai dengan project Anda
+          cache: 'npm' # Ganti ke 'yarn' atau 'pnpm' jika Anda menggunakannya
+
+      - name: Install Dependencies
+        run: npm ci # Menggunakan 'npm ci' lebih cepat dan aman untuk CI/CD
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # 👈 Folder hasil build Vite secara default adalah 'dist'
+          branch: gh-pages # Branch tujuan tempat file hasil build disimpan
