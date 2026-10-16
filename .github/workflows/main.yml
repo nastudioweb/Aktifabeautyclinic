@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # 👈 Ganti dengan 'master' jika branch utama Anda bernama master
+      - main
 
 permissions:
   contents: write
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-            - name: Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -29,5 +29,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # 👈 Folder hasil build Vite secara default adalah 'dist'
-          branch: gh-pages # Branch tujuan tempat file hasil build disimpan
+          folder: dist
+          branch: gh-pages
